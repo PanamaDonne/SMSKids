@@ -24,6 +24,9 @@
 		05F56C121AF951480013EEA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C111AF951480013EEA7 /* SystemConfiguration.framework */; };
 		05F56C141AF951560013EEA7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C131AF951560013EEA7 /* libz.dylib */; };
 		05F56C161AF9516A0013EEA7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */; };
+		05F56C181AF955C20013EEA7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C171AF955C20013EEA7 /* ParseUI.framework */; };
+		05F56C1A1AF959900013EEA7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C191AF959900013EEA7 /* Social.framework */; };
+		05F56C1C1AF959980013EEA7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C1B1AF959980013EEA7 /* Accounts.framework */; };
 		05F8DBB11AF00796002B7F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB01AF00796002B7F8D /* AppDelegate.swift */; };
 		05F8DBB31AF00796002B7F8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB21AF00796002B7F8D /* FirstViewController.swift */; };
 		05F8DBB51AF00796002B7F8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB41AF00796002B7F8D /* SecondViewController.swift */; };
@@ -63,6 +66,9 @@
 		05F56C111AF951480013EEA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		05F56C131AF951560013EEA7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		05F56C171AF955C20013EEA7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../../IOSLibs/ParseUI.framework; sourceTree = "<group>"; };
+		05F56C191AF959900013EEA7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		05F56C1B1AF959980013EEA7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		05F8DBAB1AF00796002B7F8D /* SMSKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F8DBAF1AF00796002B7F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F8DBB01AF00796002B7F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F56C1C1AF959980013EEA7 /* Accounts.framework in Frameworks */,
+				05F56C1A1AF959900013EEA7 /* Social.framework in Frameworks */,
+				05F56C181AF955C20013EEA7 /* ParseUI.framework in Frameworks */,
 				05F56C161AF9516A0013EEA7 /* libsqlite3.dylib in Frameworks */,
 				05F56C141AF951560013EEA7 /* libz.dylib in Frameworks */,
 				05F56C121AF951480013EEA7 /* SystemConfiguration.framework in Frameworks */,
@@ -123,6 +132,9 @@
 		05F8DBA21AF00796002B7F8D = {
 			isa = PBXGroup;
 			children = (
+				05F56C1B1AF959980013EEA7 /* Accounts.framework */,
+				05F56C191AF959900013EEA7 /* Social.framework */,
+				05F56C171AF955C20013EEA7 /* ParseUI.framework */,
 				05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */,
 				05F56C131AF951560013EEA7 /* libz.dylib */,
 				05F56C111AF951480013EEA7 /* SystemConfiguration.framework */,
@@ -447,6 +459,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/daniel-home/Documents/IOSLibs/parse-library-1.7.2",
+					"/Users/daniel-home/Documents/IOSLibs",
 				);
 				INFOPLIST_FILE = SMSKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -461,6 +474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/daniel-home/Documents/IOSLibs/parse-library-1.7.2",
+					"/Users/daniel-home/Documents/IOSLibs",
 				);
 				INFOPLIST_FILE = SMSKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

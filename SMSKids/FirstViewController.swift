@@ -11,9 +11,10 @@ import MediaPlayer
 import MobileCoreServices
 import AVFoundation
 import Parse
+import ParseUI
 
 
-class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
+class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIGestureRecognizerDelegate {
     
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
@@ -23,6 +24,20 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     
     override func viewDidAppear(animated: Bool) {
+        
+        if (PFUser.currentUser() == nil) {
+            
+            var logInController = PFLogInViewController()
+            logInController.delegate = self
+            logInController.fields = PFLogInFields.Facebook | PFLogInFields.UsernameAndPassword | PFLogInFields.SignUpButton | PFLogInFields.LogInButton | PFLogInFields.PasswordForgotten
+            
+            self.presentViewController(logInController, animated: true, completion: nil)
+            
+            
+            println("login")
+            
+        }
+        
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
             
