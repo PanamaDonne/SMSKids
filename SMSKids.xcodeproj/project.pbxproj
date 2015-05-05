@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05187F261AF15CBD00E5F205 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05187F251AF15CBD00E5F205 /* MediaPlayer.framework */; };
+		05187F2A1AF15D0900E5F205 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05187F291AF15D0900E5F205 /* MediaAccessibility.framework */; };
+		05187F2C1AF15D1A00E5F205 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05187F2B1AF15D1A00E5F205 /* MediaToolbox.framework */; };
+		05F56BFC1AF350DB0013EEA7 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05F56BFB1AF350DB0013EEA7 /* FontAwesome.otf */; };
+		05F56BFE1AF350EC0013EEA7 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F56BFD1AF350EC0013EEA7 /* FontAwesome.swift */; };
+		05F56C011AF950950013EEA7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56BFF1AF950950013EEA7 /* Bolts.framework */; };
+		05F56C021AF950960013EEA7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C001AF950950013EEA7 /* Parse.framework */; };
+		05F56C041AF950EA0013EEA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C031AF950EA0013EEA7 /* AudioToolbox.framework */; };
+		05F56C061AF950F60013EEA7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C051AF950F60013EEA7 /* CFNetwork.framework */; };
+		05F56C081AF951020013EEA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C071AF951020013EEA7 /* CoreGraphics.framework */; };
+		05F56C0A1AF9510F0013EEA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C091AF9510F0013EEA7 /* CoreLocation.framework */; };
+		05F56C0C1AF951280013EEA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C0B1AF951280013EEA7 /* QuartzCore.framework */; };
+		05F56C0E1AF951340013EEA7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C0D1AF951340013EEA7 /* Security.framework */; };
+		05F56C101AF9513A0013EEA7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C0F1AF9513A0013EEA7 /* StoreKit.framework */; };
+		05F56C121AF951480013EEA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C111AF951480013EEA7 /* SystemConfiguration.framework */; };
+		05F56C141AF951560013EEA7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C131AF951560013EEA7 /* libz.dylib */; };
+		05F56C161AF9516A0013EEA7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */; };
 		05F8DBB11AF00796002B7F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB01AF00796002B7F8D /* AppDelegate.swift */; };
 		05F8DBB31AF00796002B7F8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB21AF00796002B7F8D /* FirstViewController.swift */; };
 		05F8DBB51AF00796002B7F8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBB41AF00796002B7F8D /* SecondViewController.swift */; };
@@ -14,6 +31,8 @@
 		05F8DBBA1AF00796002B7F8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F8DBB91AF00796002B7F8D /* Images.xcassets */; };
 		05F8DBBD1AF00796002B7F8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F8DBBB1AF00796002B7F8D /* LaunchScreen.xib */; };
 		05F8DBC91AF00796002B7F8D /* SMSKidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBC81AF00796002B7F8D /* SMSKidsTests.swift */; };
+		05F8DBD71AF00A3A002B7F8D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F8DBD61AF00A3A002B7F8D /* MobileCoreServices.framework */; };
+		05F8DBD91AF00E46002B7F8D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F8DBD81AF00E46002B7F8D /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05187F251AF15CBD00E5F205 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		05187F291AF15D0900E5F205 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		05187F2B1AF15D1A00E5F205 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		05F56BFB1AF350DB0013EEA7 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		05F56BFD1AF350EC0013EEA7 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
+		05F56BFF1AF950950013EEA7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../IOSLibs/parse-library-1.7.2/Bolts.framework"; sourceTree = "<group>"; };
+		05F56C001AF950950013EEA7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../IOSLibs/parse-library-1.7.2/Parse.framework"; sourceTree = "<group>"; };
+		05F56C031AF950EA0013EEA7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		05F56C051AF950F60013EEA7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		05F56C071AF951020013EEA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		05F56C091AF9510F0013EEA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		05F56C0B1AF951280013EEA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		05F56C0D1AF951340013EEA7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		05F56C0F1AF9513A0013EEA7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		05F56C111AF951480013EEA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		05F56C131AF951560013EEA7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		05F8DBAB1AF00796002B7F8D /* SMSKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F8DBAF1AF00796002B7F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F8DBB01AF00796002B7F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +74,8 @@
 		05F8DBC21AF00796002B7F8D /* SMSKidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSKidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F8DBC71AF00796002B7F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F8DBC81AF00796002B7F8D /* SMSKidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSKidsTests.swift; sourceTree = "<group>"; };
+		05F8DBD61AF00A3A002B7F8D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		05F8DBD81AF00E46002B7F8D /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F56C161AF9516A0013EEA7 /* libsqlite3.dylib in Frameworks */,
+				05F56C141AF951560013EEA7 /* libz.dylib in Frameworks */,
+				05F56C121AF951480013EEA7 /* SystemConfiguration.framework in Frameworks */,
+				05F56C101AF9513A0013EEA7 /* StoreKit.framework in Frameworks */,
+				05F56C0E1AF951340013EEA7 /* Security.framework in Frameworks */,
+				05F56C0C1AF951280013EEA7 /* QuartzCore.framework in Frameworks */,
+				05F8DBD71AF00A3A002B7F8D /* MobileCoreServices.framework in Frameworks */,
+				05F56C0A1AF9510F0013EEA7 /* CoreLocation.framework in Frameworks */,
+				05F56C081AF951020013EEA7 /* CoreGraphics.framework in Frameworks */,
+				05F56C061AF950F60013EEA7 /* CFNetwork.framework in Frameworks */,
+				05F56C041AF950EA0013EEA7 /* AudioToolbox.framework in Frameworks */,
+				05F56C011AF950950013EEA7 /* Bolts.framework in Frameworks */,
+				05F56C021AF950960013EEA7 /* Parse.framework in Frameworks */,
+				05187F2C1AF15D1A00E5F205 /* MediaToolbox.framework in Frameworks */,
+				05187F2A1AF15D0900E5F205 /* MediaAccessibility.framework in Frameworks */,
+				05187F261AF15CBD00E5F205 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +112,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05F56BFA1AF350C50013EEA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05F56BFB1AF350DB0013EEA7 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		05F8DBA21AF00796002B7F8D = {
 			isa = PBXGroup;
 			children = (
+				05F56C151AF9516A0013EEA7 /* libsqlite3.dylib */,
+				05F56C131AF951560013EEA7 /* libz.dylib */,
+				05F56C111AF951480013EEA7 /* SystemConfiguration.framework */,
+				05F56C0F1AF9513A0013EEA7 /* StoreKit.framework */,
+				05F56C0D1AF951340013EEA7 /* Security.framework */,
+				05F56C0B1AF951280013EEA7 /* QuartzCore.framework */,
+				05F56C091AF9510F0013EEA7 /* CoreLocation.framework */,
+				05F56C071AF951020013EEA7 /* CoreGraphics.framework */,
+				05F56C051AF950F60013EEA7 /* CFNetwork.framework */,
+				05F56C031AF950EA0013EEA7 /* AudioToolbox.framework */,
+				05F56BFF1AF950950013EEA7 /* Bolts.framework */,
+				05F56C001AF950950013EEA7 /* Parse.framework */,
+				05187F2B1AF15D1A00E5F205 /* MediaToolbox.framework */,
+				05187F291AF15D0900E5F205 /* MediaAccessibility.framework */,
+				05187F251AF15CBD00E5F205 /* MediaPlayer.framework */,
+				05F8DBD61AF00A3A002B7F8D /* MobileCoreServices.framework */,
 				05F8DBAD1AF00796002B7F8D /* SMSKids */,
 				05F8DBC51AF00796002B7F8D /* SMSKidsTests */,
 				05F8DBAC1AF00796002B7F8D /* Products */,
@@ -79,12 +157,12 @@
 		05F8DBAD1AF00796002B7F8D /* SMSKids */ = {
 			isa = PBXGroup;
 			children = (
+				05F56BFD1AF350EC0013EEA7 /* FontAwesome.swift */,
+				05F56BFA1AF350C50013EEA7 /* Resources */,
+				05F8DBD31AF00803002B7F8D /* storyboard */,
+				05F8DBD21AF007EB002B7F8D /* controllers */,
 				05F8DBB01AF00796002B7F8D /* AppDelegate.swift */,
-				05F8DBB21AF00796002B7F8D /* FirstViewController.swift */,
-				05F8DBB41AF00796002B7F8D /* SecondViewController.swift */,
-				05F8DBB61AF00796002B7F8D /* Main.storyboard */,
 				05F8DBB91AF00796002B7F8D /* Images.xcassets */,
-				05F8DBBB1AF00796002B7F8D /* LaunchScreen.xib */,
 				05F8DBAE1AF00796002B7F8D /* Supporting Files */,
 			);
 			path = SMSKids;
@@ -113,6 +191,25 @@
 				05F8DBC71AF00796002B7F8D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05F8DBD21AF007EB002B7F8D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05F8DBB21AF00796002B7F8D /* FirstViewController.swift */,
+				05F8DBB41AF00796002B7F8D /* SecondViewController.swift */,
+				05F8DBD81AF00E46002B7F8D /* ThirdViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		05F8DBD31AF00803002B7F8D /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				05F8DBBB1AF00796002B7F8D /* LaunchScreen.xib */,
+				05F8DBB61AF00796002B7F8D /* Main.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +294,7 @@
 			files = (
 				05F8DBB81AF00796002B7F8D /* Main.storyboard in Resources */,
 				05F8DBBD1AF00796002B7F8D /* LaunchScreen.xib in Resources */,
+				05F56BFC1AF350DB0013EEA7 /* FontAwesome.otf in Resources */,
 				05F8DBBA1AF00796002B7F8D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F56BFE1AF350EC0013EEA7 /* FontAwesome.swift in Sources */,
 				05F8DBB51AF00796002B7F8D /* SecondViewController.swift in Sources */,
 				05F8DBB11AF00796002B7F8D /* AppDelegate.swift in Sources */,
+				05F8DBD91AF00E46002B7F8D /* ThirdViewController.swift in Sources */,
 				05F8DBB31AF00796002B7F8D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/daniel-home/Documents/IOSLibs/parse-library-1.7.2",
+				);
 				INFOPLIST_FILE = SMSKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/daniel-home/Documents/IOSLibs/parse-library-1.7.2",
+				);
 				INFOPLIST_FILE = SMSKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +521,7 @@
 				05F8DBCE1AF00796002B7F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05F8DBCF1AF00796002B7F8D /* Build configuration list for PBXNativeTarget "SMSKidsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +530,7 @@
 				05F8DBD11AF00796002B7F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
