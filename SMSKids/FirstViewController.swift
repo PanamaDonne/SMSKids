@@ -19,6 +19,8 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
     var captureDevice : AVCaptureDevice?
+    let logInController = LoginViewController()
+
     
     @IBOutlet weak var captureLabel: UILabel!
     
@@ -27,7 +29,6 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         if (PFUser.currentUser() == nil) {
             
-            var logInController = PFLogInViewController()
             logInController.delegate = self
             logInController.fields = PFLogInFields.Facebook | PFLogInFields.UsernameAndPassword | PFLogInFields.SignUpButton | PFLogInFields.LogInButton | PFLogInFields.PasswordForgotten
             
@@ -94,6 +95,10 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         UISaveVideoAtPathToSavedPhotosAlbum(pathString, self, nil, nil)
     
+    }
+    
+    func checkLoggedIn() {
+        
     }
     
 }
