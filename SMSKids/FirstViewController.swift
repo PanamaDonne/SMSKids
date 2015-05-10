@@ -32,6 +32,7 @@ class FirstViewController: UIViewController, UIImagePickerControllerDelegate, UI
             logInController.delegate = self
             logInController.fields = PFLogInFields.Facebook | PFLogInFields.UsernameAndPassword | PFLogInFields.SignUpButton | PFLogInFields.LogInButton | PFLogInFields.PasswordForgotten
             
+            logInController.facebookPermissions = [ "friends_about_me" ]
             self.presentViewController(logInController, animated: true, completion: nil)
             
             
