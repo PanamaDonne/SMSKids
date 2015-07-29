@@ -3,15 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "login_background.png"
+      "filename" : "upload.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "2x",
+      "filename" : "upload@2x.png"
     }
   ],
   "info" : {

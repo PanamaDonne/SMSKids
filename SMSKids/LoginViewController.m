@@ -25,15 +25,11 @@
     
     [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]]];
     
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateHighlighted];
-    [self.logInView.facebookButton setTitle:@"Connect with Facebook" forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"Connect with Facebook" forState:UIControlStateHighlighted];
     [self.logInView.signUpButton setBackgroundColor:[UIColor blackColor]];
     [self.logInView.signUpButton setTitle:@"Sign in" forState:UIControlStateNormal];
     [self.logInView.logInButton setBackgroundColor:[UIColor grayColor]];
     [self.logInView.passwordForgottenButton setTitle:@"Forgot your password?" forState:UIControlStateNormal];
-    [self.logInView.passwordForgottenButton setTitleColor: [UIColor whiteColor]  forState:UIControlStateNormal];
+    [self.logInView.passwordForgottenButton setTitleColor: [UIColor blackColor]  forState:UIControlStateNormal];
     
     
     // Add login field background
@@ -52,12 +48,11 @@
     // Set frame for elements
     //[self.logInView.dismissButton setFrame:CGRectMake(10.0f, 10.0f, 87.5f, 45.5f)];
     //[self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 187.0f, 58.5f)];
-    [self.logInView.facebookButton setFrame:CGRectMake(65.0f, 240.0f, 250.0f, 40.0f)];
-    [self.logInView.usernameField setFrame:CGRectMake(65.0f, 345.0f, 250.0f, 50.0f)];
-    [self.logInView.passwordField setFrame:CGRectMake(65.0f, 395.0f, 250.0f, 50.0f)];
-    [self.logInView.logInButton setFrame:CGRectMake(65.0f, 450.0f, 250.0f, 40.0f)];
-    [self.logInView.signUpButton setFrame:CGRectMake(65.0f, 500.0f, 250.0f, 40.0f)];
-    [self.logInView.passwordForgottenButton setFrame:CGRectMake(65.0f, 550.0f, 250.0f, 50.0f)];
+    //[self.logInView.usernameField setFrame:CGRectMake(65.0f, 345.0f, 250.0f, 50.0f)];
+    //[self.logInView.passwordField setFrame:CGRectMake(65.0f, 395.0f, 250.0f, 50.0f)];
+    //[self.logInView.logInButton setFrame:CGRectMake(65.0f, 450.0f, 250.0f, 40.0f)];
+    //[self.logInView.signUpButton setFrame:CGRectMake(65.0f, 500.0f, 250.0f, 40.0f)];
+    //[self.logInView.passwordForgottenButton setFrame:CGRectMake(65.0f, 550.0f, 250.0f, 50.0f)];
     [self.fieldsBackground setFrame:CGRectMake(0, 0, 400, 750)];
 }
 

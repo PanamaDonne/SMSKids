@@ -29,6 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ---------------- Track statistics around application opens. -------------------
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        
+        // ------------------------------- UberTesters -----------------------------------
+        Ubertesters.shared().initialize()
+        
+    
+        
         return true
     }
 

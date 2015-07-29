@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Camera-->
+        <!--Shoot-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SMSKids" customModuleProvider="target" sceneMemberID="viewController">
@@ -13,42 +13,82 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39R-bt-JNa">
+                            <imageView userInteractionEnabled="NO" alpha="0.30000000298023222" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-hH-BAm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pp-C2-LYE" userLabel="progressLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="207" width="200" height="200"/>
-                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFi-zj-dXG">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="shoot">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureVideo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="lKW-NA-LGi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ZpC-hH-BAm" secondAttribute="centerX" id="5Rh-8D-n4v"/>
+                            <constraint firstItem="8pp-C2-LYE" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="Nzt-Wp-H0R"/>
+                            <constraint firstAttribute="centerX" secondItem="8pp-C2-LYE" secondAttribute="centerX" id="SRU-a5-hX6"/>
+                            <constraint firstAttribute="centerY" secondItem="BFi-zj-dXG" secondAttribute="centerY" id="c1I-x0-A8s"/>
+                            <constraint firstAttribute="centerY" secondItem="ZpC-hH-BAm" secondAttribute="centerY" id="czu-gU-ufd"/>
+                            <constraint firstAttribute="centerX" secondItem="BFi-zj-dXG" secondAttribute="centerX" id="yY5-5g-stK"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="39R-bt-JNa"/>
+                                <exclude reference="ZpC-hH-BAm"/>
+                                <exclude reference="8pp-C2-LYE"/>
+                                <exclude reference="BFi-zj-dXG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Nzt-Wp-H0R"/>
+                                <exclude reference="SRU-a5-hX6"/>
+                                <exclude reference="c1I-x0-A8s"/>
+                                <exclude reference="yY5-5g-stK"/>
+                                <exclude reference="5Rh-8D-n4v"/>
+                                <exclude reference="czu-gU-ufd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="39R-bt-JNa"/>
+                                <include reference="ZpC-hH-BAm"/>
+                                <include reference="8pp-C2-LYE"/>
+                                <include reference="BFi-zj-dXG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Nzt-Wp-H0R"/>
+                                <include reference="SRU-a5-hX6"/>
+                                <include reference="c1I-x0-A8s"/>
+                                <include reference="yY5-5g-stK"/>
+                                <include reference="5Rh-8D-n4v"/>
+                                <include reference="czu-gU-ufd"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Shoot" image="cameratab" id="acW-dT-cKf">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="captureLabel" destination="39R-bt-JNa" id="1oc-Wf-R2h"/>
+                        <outlet property="captureButton" destination="BFi-zj-dXG" id="rsn-gN-x54"/>
+                        <outlet property="progressLabel" destination="8pp-C2-LYE" id="fS8-W1-Fj9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="-840"/>
         </scene>
-        <!--My Album-->
+        <!--Upload-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SMSKids" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,60 +97,116 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-sj-VWL">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="X3S-iO-gvt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0o-sX-QC6" userLabel="progressLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="207" width="200" height="200"/>
-                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWl-AA-Caf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="WS7-uo-TOu">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="280"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="250" id="XaK-xK-Hcf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="280"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WS7-uo-TOu"/>
+                                        <exclude reference="XaK-xK-Hcf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WS7-uo-TOu"/>
+                                        <include reference="XaK-xK-Hcf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="openAlbum:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="OkZ-Ia-DDN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cWl-AA-Caf" secondAttribute="centerX" id="2eI-3u-mdr"/>
+                            <constraint firstAttribute="centerX" secondItem="cWl-AA-Caf" secondAttribute="centerX" id="3DJ-VI-31y"/>
+                            <constraint firstAttribute="centerY" secondItem="cWl-AA-Caf" secondAttribute="centerY" id="62d-ss-qWn"/>
+                            <constraint firstAttribute="centerX" secondItem="X3S-iO-gvt" secondAttribute="centerX" id="6fE-I2-i7g"/>
+                            <constraint firstAttribute="centerY" secondItem="cWl-AA-Caf" secondAttribute="centerY" id="9nZ-3g-6ZO"/>
+                            <constraint firstAttribute="centerX" secondItem="cWl-AA-Caf" secondAttribute="centerX" id="Bs4-JT-G3e"/>
+                            <constraint firstAttribute="centerX" secondItem="m0o-sX-QC6" secondAttribute="centerX" id="XIb-KT-Y6x"/>
+                            <constraint firstAttribute="centerX" secondItem="cWl-AA-Caf" secondAttribute="centerX" id="bqX-XZ-vz7"/>
+                            <constraint firstAttribute="centerY" secondItem="X3S-iO-gvt" secondAttribute="centerY" id="hhh-Qn-FbG"/>
+                            <constraint firstItem="m0o-sX-QC6" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="hxi-IQ-1Ck"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="cWl-AA-Caf" secondAttribute="bottom" constant="115" id="iY2-JV-L3O">
+                                <variation key="heightClass=regular-widthClass=compact" constant="117"/>
+                            </constraint>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="IIr-sj-VWL"/>
+                                <exclude reference="X3S-iO-gvt"/>
+                                <exclude reference="m0o-sX-QC6"/>
+                                <exclude reference="cWl-AA-Caf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="iY2-JV-L3O"/>
+                                <exclude reference="XIb-KT-Y6x"/>
+                                <exclude reference="hxi-IQ-1Ck"/>
+                                <exclude reference="2eI-3u-mdr"/>
+                                <exclude reference="3DJ-VI-31y"/>
+                                <exclude reference="62d-ss-qWn"/>
+                                <exclude reference="9nZ-3g-6ZO"/>
+                                <exclude reference="Bs4-JT-G3e"/>
+                                <exclude reference="bqX-XZ-vz7"/>
+                                <exclude reference="6fE-I2-i7g"/>
+                                <exclude reference="hhh-Qn-FbG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="IIr-sj-VWL"/>
+                                <include reference="X3S-iO-gvt"/>
+                                <include reference="m0o-sX-QC6"/>
+                                <include reference="cWl-AA-Caf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="iY2-JV-L3O"/>
+                                <include reference="XIb-KT-Y6x"/>
+                                <include reference="hxi-IQ-1Ck"/>
+                                <exclude reference="2eI-3u-mdr"/>
+                                <include reference="3DJ-VI-31y"/>
+                                <exclude reference="62d-ss-qWn"/>
+                                <include reference="9nZ-3g-6ZO"/>
+                                <exclude reference="Bs4-JT-G3e"/>
+                                <exclude reference="bqX-XZ-vz7"/>
+                                <include reference="6fE-I2-i7g"/>
+                                <include reference="hhh-Qn-FbG"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Album" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="uploadtab" id="cPa-gy-q4n">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="test" destination="IIr-sj-VWL" id="niD-ES-CwV"/>
+                        <outlet property="progressLabel" destination="m0o-sX-QC6" id="WWE-Ob-8Tz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="-172.5"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="T9c-z4-sK7">
-            <objects>
-                <viewController id="MmH-Mv-T4r" customClass="ThirdViewController" customModule="SMSKids" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uFf-ea-LKR"/>
-                        <viewControllerLayoutGuide type="bottom" id="TiL-jL-xfZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hU2-9p-W3N">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="dnY-Pg-b9K"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M6F-21-htg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1102" y="538"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -118,7 +214,7 @@
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -126,7 +222,6 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="MmH-Mv-T4r" kind="relationship" relationship="viewControllers" id="puB-8v-gYx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -135,7 +230,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cameratab" width="25" height="25"/>
+        <image name="login_background" width="375" height="667"/>
+        <image name="shoot" width="256" height="255"/>
+        <image name="upload" width="256" height="262"/>
+        <image name="uploadtab" width="25" height="25"/>
     </resources>
 </document>
